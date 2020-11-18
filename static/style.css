@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #eeeded;
+  overflow: hidden;
+}
+
+#main-heading {
+  background-color: #5c6e91;
+  padding: 3rem;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #eeeded;
+  text-transform: uppercase;
+}
+
+.sort-form {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #8f384d;
+}
+
+.input {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.input > label {
+  color: #eeeded;
+}
+
+.input > input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 0.2rem solid #eeeded;
+  padding: 1rem;
+  color: #eeeded;
+}
+
+.input > input:active,
+.input > input:focus {
+  border: 0.2rem solid #eeeded;
+  border-radius: 1rem;
+}
+
+.choices {
+  display: flex;
+  font-size: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.choices > button {
+  padding: 1rem;
+  background: rgb(221, 152, 102, 0);
+  color: #eeeded;
+  border: 0.2rem solid #eeeded;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: transform 100ms;
+}
+
+.choices > button:hover {
+  background: rgb(221, 152, 102, 1);
+  color: #333;
+  border: 0.2rem solid #333;
+}
+
+.choices > button:active {
+  transform: translateY(4px);
+  box-shadow: 0.2rem 0.2rem #333;
+}
+
+button[type="submit"] {
+  padding: 1rem 3rem;
+  background: rgb(221, 152, 102, 1);
+  color: #333;
+  border: 0.2rem solid #333;
+  border-radius: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  transition: transform 100ms;
+}
+
+button[type="submit"]:hover {
+  background: rgb(221, 152, 102, 0);
+  color: #eeeded;
+  border: 0.2rem solid #eeeded;
+}
+
+button[type="submit"]:active {
+  transform: translateY(4px);
+  box-shadow: 0.2rem 0.2rem #333;
+}
+
+@media (max-width: 500px) {
+  #main-heading {
+    padding: 2.5rem;
+  }
+}
